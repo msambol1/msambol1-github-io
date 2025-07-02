@@ -3,17 +3,23 @@
     <head>
         <title> Martina Portfolio</title>
         <style>
-            body {
+            body{
                 background-color: forestgreen;
                 color: antiquewhite;
                 font-family: monospace;
             }
+
                a:link{
                 color:antiquewhite;
             }
                 a:visited{
                 color: antiquewhite;
 
+            }
+            main{
+                margin-left:auto;
+                margin-right:auto;
+                max-width:1024px;
             }
             section{
                 background-color: rgb(98, 194, 98);
@@ -22,26 +28,16 @@
                 padding-top:16px;
                 padding-bottom:16px;
             }
-            main{
-                margin-left:auto;
-                margin-right:auto;
-                max-width:1024px;
+
+            img{
+                width: 50%;
+                aspect-ratio:16/9;
             }
-            nav{
-                margin-left:auto;
-                margin-right: auto;
-                display:inline;
-                max-width:1024px;
-
-                         
-
+            ul{
+                list-style-type: none;
             }
         </style>
-                <nav>
-                    <a href="#">About me</a>
-                    <a href="./contact.html">Contact</a>
-                    <a href="./projects.html">Projects</a>
-                </nav>
+
     </head>
     <body>
         <main>
@@ -58,12 +54,30 @@
                 <li>Git</li>
             </ul>
         </section>
+
         <section>
             <h1>Contact me</h1>
+
             <a href="mailto:martina@test.hr">martina@test.hr</a><br>
             <a href="tel:+12345645">Phone</a><br>
             <a href="https://hr.linkedin.com/">Linkedin</a><br>
         </section>
-    </main>
+            
+        <section>
+            
+                <h1>Projects</h1>
+            <ul>
+                <li>
+                   <div> <img src="./media/company.png" alt="search"></div>
+                   <div><a href="https://msambol1.github.io/company-website/">Company website</a></div>
+                </li>
+                <li>
+                    <div><img src="./media/search.png" alt="search"></div>
+                    <div><a href="https://msambol1.github.io/algebra-search/">Search</a></div>
+                </li>
+            </ul>
+        
+        </section>
+        </main>
     </body>
 </html>
