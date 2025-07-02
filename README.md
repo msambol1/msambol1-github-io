@@ -2,7 +2,7 @@
 This repository contains my portfolio website.
 
 ## Features
-- [ ] About me
+- [x] About me
 - [ ] Contact information
 - [ ] Projects
 
