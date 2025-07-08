@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--viewport koji govori pregledniku na koji način se prikazuje u prostoru pregledniku, skaliranje je 1.0 (stvarni prikaz)-->
         <meta name="descripton" content="The portfolio of MArtina Sabol, a frontend developer from Lobor, Croatia">
         <link type="image/png" sizes="16x16" rel="icon" href="./media/favicon.png">
-        
+
         <style>
             body{
                 background-color: forestgreen;
@@ -22,11 +22,17 @@
                 color: antiquewhite;
 
             }
-            main{
+
+            .wrapper{
                 margin-left:auto;
                 margin-right:auto;
-                max-width:1024px;
+                max-width:768px;
+                
             }
+            .header{
+                background-color: goldenrod;
+            }
+
             section{
                 background-color: rgb(98, 194, 98);
                 margin-top:10px;
@@ -46,11 +52,24 @@
             .lista{
                 padding-left:0px;
             }
+            .price-list-hour{
+                background-color: rgb(94, 146, 94);
+            }
+            .input{
+                width: 100%;
+                border-radius: 10px;
+                border: none;
+                background-color: rgb(210, 231, 210);
+
+            }
         </style>
 
     </head>
     <body>
-        <main>
+        <header class="wrapper header">
+            <h1> Welcome to my portfolio</h1>
+        </header>
+        <main class="wrapper">
             
         <section>
             <h1>About me</h1>
@@ -87,8 +106,89 @@
                     <div><a href="https://msambol1.github.io/algebra-search/">Search</a></div>
                 </li>
             </ul>
-        
            </section>
+
+           <section> 
+            <h1>Price list</h1>
+            <table border="green">
+                <tr class="price-list-hour">
+                   <td></td>
+                   <th>Q1</th>
+                   <th>Q2</th>
+                   <th>Q3</th>
+                   <th>Q4</th>
+                </tr>
+                <tr>
+                    <td>Hour</td>
+                    <td>20€</td>
+                    <td>30€</td>
+                    <td>40€</td>
+                    <td>50€</td>
+                 </tr>
+                 <tr>
+                    <td>Day</td>
+                    <td>150€</td>
+                    <td>240€</td>
+                    <td>320€</td>
+                    <td>420€</td>
+                 </tr>
+               
+            </table>
+           </section>
+
+           <section>
+                <h2>Request a quote for your project</h2>
+                <form>
+                    <div>
+                        <label for="name">Your first name:</label>
+                        <input class="input" type="text" id="name" name="full_name" >
+                    </div>
+                    <div>
+                        <label for="title">Your title:</label>
+                        <select class="input" id="title" name="title">
+                            <option value="mr">Mr.</option>
+                            <option value="ms">Ms.</option>
+                            <option value="sir">Sir.</option>
+                            <option value="mrs">Mrs.</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="email"> Email:</label>
+                        <input class="input" type="email" id="email" name="email">
+                    </div>
+                    <div>
+                        <label for="description">Project description</label>
+                        <textarea class="input" id="description" name="description" rows="4"></textarea>
+                    </div>
+                    <div>
+                        <label for="budget">Your budget:</label>
+                        <select class="input" id="budget" name="budget"> 
+                            <option> &lt; 10k€ </option>
+                            <option>10k-100k €</option>
+                            <option>&gt; 100k €</option>
+                            </select>
+
+                    </div>
+
+                    <div>
+                        <fieldset>
+                            <legend> Required service</legend>
+                            <lable><input type="radio" name="service" value="design">Desing</lable>
+                            <lable><input type="radio" name="service" value="development">Development</lable>
+                        </fieldset>
+                    </div>
+
+                    <div>
+                        <label><input type="checkbox" name="gdpr"> I consent to the terms and conditions</label>
+                    </div>
+
+                    <div>
+                        <button type="submit">Send request</button>
+                    </div>
+                </form>
+           </section>
+
         </main>
+        <footer class="wrapper">&copy Martina Sambol</footer>
     </body>
 </html>
